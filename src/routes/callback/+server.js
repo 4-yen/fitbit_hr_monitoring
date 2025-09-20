@@ -1,7 +1,7 @@
 import { redirect } from '@sveltejs/kit';
 // `$lib`からではなく、`$env/static/private`からインポートする
-import { FITBIT_CLIENT_ID, FITBIT_CLIENT_SECRET } from '$env/static/private'; 
-import { FITBIT_REDIRECT_URI } from '$lib/fitbitConfig'; // REDIRECT_URIは秘密情報ではないので$libでもOK
+import { FITBIT_CLIENT_ID, FITBIT_CLIENT_SECRET, FITBIT_REDIRECT_URI } from '$env/static/private'; 
+// import { FITBIT_REDIRECT_URI } from '$lib/fitbitConfig'; // REDIRECT_URIは秘密情報ではないので$libでもOK
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET({ url, cookies }) {
