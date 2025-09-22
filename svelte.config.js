@@ -13,14 +13,9 @@ const config = {
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter({
-            // pages: 'build', // ビルドファイルの出力先（デフォルトはbuild）
-            // assets: 'build', // アセットの出力先（デフォルトはbuild）
             fallback: 'index.html', // SPAモードの場合、404エラーをindex.htmlにフォールバック
             precompress: false,
             strict: true,
-			// paths: {
-			// 	base: '/fitbit_hr_monitoring' // この行を追加！
-			// }
         })
 	}
 };
